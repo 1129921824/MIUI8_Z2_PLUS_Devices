@@ -1,0 +1,43 @@
+From 659b6f368afd6f1788df5adecbf2c891f4fbac7c Mon Sep 17 00:00:00 2001
+From: wonitor <wonitor@qq.com>
+Date: Sat, 10 Dec 2016 19:53:12 +0800
+Subject: [PATCH] 12
+
+---
+ services/smali/com/android/server/AppOpsService.smali | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/services/smali/com/android/server/AppOpsService.smali b/services/smali/com/android/server/AppOpsService.smali
+
+--- a/services/smali/com/android/server/AppOpsService.smali
++++ b/services/smali/com/android/server/AppOpsService.smali
+@@ -2348,7 +2348,7 @@
+     .prologue
+     if-ltz p1, :cond_1
+ 
+-    const/16 v0, 0x3f
++    sget v0, Landroid/app/AppOpsManager;->_NUM_OP:I
+ 
+     if-ge p1, v0, :cond_1
+ 
+@@ -8549,7 +8549,7 @@
+     .local v1, "opRestrictions":[Z
+     if-nez v1, :cond_0
+ 
+-    const/16 v3, 0x3f
++    sget v3, Landroid/app/AppOpsManager;->_NUM_OP:I
+ 
+     new-array v1, v3, [Z
+ 
+@@ -9030,7 +9030,7 @@
+     .prologue
+     const/4 v4, -0x1
+ 
+-    const/16 v2, 0x3f
++    sget v2, Landroid/app/AppOpsManager;->_NUM_OP:I
+ 
+     if-le p1, v2, :cond_0
+ 
+-- 
+2.7.4
+

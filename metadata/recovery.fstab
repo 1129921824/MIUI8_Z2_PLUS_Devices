@@ -1,0 +1,14 @@
+/boot	emmc	/dev/block/bootdevice/by-name/boot
+/cache	ext4	/dev/block/bootdevice/by-name/cache
+/recovery	emmc	/dev/block/bootdevice/by-name/recovery
+/system	ext4	/dev/block/bootdevice/by-name/system
+/system_image	emmc	/dev/block/bootdevice/by-name/system
+/data	ext4	/dev/block/bootdevice/by-name/userdata
+/firmware	vfat	/dev/block/bootdevice/by-name/modem
+/firmware_image	emmc	/dev/block/bootdevice/by-name/modem
+/misc	emmc	/dev/block/bootdevice/by-name/misc
+/efs1	emmc	/dev/block/bootdevice/by-name/modemst1
+/efs2	emmc	/dev/block/bootdevice/by-name/modemst2
+/efsc	emmc	/dev/block/bootdevice/by-name/fsc
+/efsg	emmc	/dev/block/bootdevice/by-name/fsg
+/usb_otg	vfat	/dev/block/sda1
